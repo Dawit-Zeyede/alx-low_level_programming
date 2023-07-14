@@ -3,7 +3,10 @@
 /* more headers goes there */
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * betty style doc for function main goes there 
+ * This function determines whether randoly generated number is positive or negative
+ */
 
 int main(void)
 {
