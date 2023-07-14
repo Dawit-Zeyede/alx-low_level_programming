@@ -4,10 +4,10 @@
 #include <stdio.h>
 
 /**
- * betty style doc for function main goes there
- * determines whether randomly generated number is positive or negative
+ * main - positive or negative checker
+ *
+ * Return: end of the program
  */
-
 int main(void)
 {
 	int n;
