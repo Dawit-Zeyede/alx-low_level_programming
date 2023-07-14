@@ -10,7 +10,7 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 26; i++)
-		if (alpha[i] != 'e' || alpha[i] != 'a')
+		if (alpha[i] != 'e' && alpha[i] != 'q')
 			putchar(alpha[i]);
 	putchar('\n');
 	return (0);
