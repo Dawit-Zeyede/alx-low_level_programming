@@ -15,20 +15,17 @@ int main(void)
 	{
 		for (j = 49 ; j < 58; j++)
 		{
-			if (i < j)
+			for (m = 50; m < 58 ; m++)
 			{
-				for (m = 50; m < 58 ; m++)
+				if ((i < j) && (j < m))
 				{
-					if (j < m)
+					putchar(i);
+					putchar(j);
+					putchar(m);
+					if ((i != 55) | (j != 56) | (m != 57))
 					{
-						putchar(i);
-						putchar(j);
-						putchar(m);
-						if ((i != 55) | (j != 56) | (m != 57))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
