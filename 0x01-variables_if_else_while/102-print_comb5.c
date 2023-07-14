@@ -19,14 +19,14 @@ int main(void)
 			for (m = 48; m < 58; m++)
 			{
 				for (n = 49; n < 58; n++)
-					if ((i <= m) | (j <= n))
+					if ((i <= m) || (j < n))
 					{
 						putchar(i);
 						putchar(j);
 						putchar(' ');
 						putchar(m);
 						putchar(n);
-						if ((i != 57) | (j != 56) | (m != 57) | (m != 57))
+						if ((i != 57) || (j != 56) || (m != 57) || (m != 57))
 						{
 							putchar(',');
 							putchar(' ');
