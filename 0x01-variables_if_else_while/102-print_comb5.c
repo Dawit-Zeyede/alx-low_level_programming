@@ -2,7 +2,7 @@
 /**
  * main - combination of two two digit numbers.
  *
- * return: end of the program
+ * Return: end of the program
  */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		for(j = 0; j < 100; j++)
+		for (j = 0; j < 100; j++)
 		{
 			if (i < j)
 			{
