@@ -1,19 +1,22 @@
-#include <stdio.h>
 #include "main.h"
 /**
-  * main - prints _putchar
-  *
-  * Return: end of the file
+  * _putchar - print "_putchar"
+  * 
+  * Return: end of the program
   */
-
 int main(void)
 {
-	int i = 0;
-	char cha[] = "_putchar";
-
-	for (i = 0; i < 9; i++)
-	{
-		_putchar(cha[i]);
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
+
+
+
