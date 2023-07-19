@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * jack_bauer - prints 24-hours
-  * 
+  *
   */
 void jack_bauer(void)
 {
@@ -9,10 +9,10 @@ void jack_bauer(void)
 	int j;
 
 	i = 0;
-	while(i < 24)
+	while (i < 24)
 	{
 		j = 0;
-		while(j < 60)
+		while (j < 60)
 		{
 			_putchar((i / 10) + '0');
 			_putchar((i % 10) + '0');
