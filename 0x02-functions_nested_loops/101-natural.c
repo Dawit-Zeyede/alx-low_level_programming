@@ -1,10 +1,11 @@
+#include "main.h"
 #include <stdio.h>
-/** main - multiples and their sum.
+/** natural - multiples and their sum.
   * 
   * Return: end of the program
   */
 
-int main(void)
+void natural(void)
 {
 	int i;
 	int sum;
@@ -19,5 +20,5 @@ int main(void)
 		}
 	}
 	printf("%d", sum);
-	printf("\n");
+	_putchar('\n');
 }
