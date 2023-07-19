@@ -12,7 +12,7 @@ int main(void)
 	long int n1;
 	long int n2;
 	long int next;
-	long long int sum;
+	long int sum;
 
 	n1 = 1;
 	n2 = 2;
@@ -24,7 +24,7 @@ int main(void)
 		if ((next % 2 == 0))
 			sum += next;
 	}
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
 
