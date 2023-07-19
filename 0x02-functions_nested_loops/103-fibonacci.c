@@ -22,6 +22,8 @@ int main(void)
 		next = n1 + n2;
 		if ((next % 2 == 0) && (next < 4000000))
 			sum += next;
+		n1 = n2;
+		n2 = next;
 	}
 	printf("%lu\n", sum);
 	return (0);
