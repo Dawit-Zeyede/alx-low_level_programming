@@ -21,7 +21,7 @@ int main(void)
 	for (i = 1; i < 49; i++)
 	{
 		next = n1 + n2;
-		if ((next % 2 == 0))
+		if ((next % 2 == 0) && (next < 4000000))
 			sum += next;
 	}
 	printf("%ld\n", sum);
