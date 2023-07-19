@@ -26,9 +26,8 @@ int main(void)
 			n2 = next;
 		}
 		else
-			printf("%ld", next);
+			printf("%ld\n", next);
 	}
-	printf("\n");
 	return (0);
 }
 
