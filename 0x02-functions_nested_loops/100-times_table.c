@@ -11,18 +11,28 @@ void print_times_table(int n)
 	int i;
 	int j;
 
-	for (i = 0; i <= n; i++)
+	if (n <= 15 && n >= 0)
 	{
-		for (j = 0; j <= n; j++)
+		for (i = 0; i <= n; i++)
 		{
-			int res;
+			for (j = 0; j <= n; j++)
+			{
+				int res;
 
-			res = i * j;
-			if (j < n)
-				printf("%d,   ", res);
-			else
-				printf("%d", res);
+				res = i * j;
+				if (j < n)
+				{
+					if ((i * (j + 1) < 10))
+						printf("%d,   ", res);
+					else if ((i * (j + 1) < 100))
+						printf("%d,  ", res);
+					else
+						printf("%d, ", res);
+				}
+				else
+					printf("%d", res);
+			}
+			putchar('\n');
 		}
-		putchar('\n');
 	}
 }
