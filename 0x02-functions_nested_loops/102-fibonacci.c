@@ -28,6 +28,7 @@ int main(void)
 		else
 			printf("%ld", next);
 	}
+	printf("\n");
 	return (0);
 }
 
