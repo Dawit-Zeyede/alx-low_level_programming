@@ -19,7 +19,7 @@ int main(void)
 	for (i = 1; i < 97; i++)
 	{
 		next = n1 + n2;
-		if (i != 48)
+		if (i != 96)
 		{
 			printf("%ld, ", next);
 			n1 = n2;
