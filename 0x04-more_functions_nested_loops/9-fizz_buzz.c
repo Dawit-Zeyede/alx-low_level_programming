@@ -14,14 +14,19 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (((i % 3) == 0) && ((i % 5) != 0))
-			printf("%s ", fi);
-		else if (((i % 5) == 0) && ((i % 3) != 0))
-			printf("%s ", nu);
-		else if (((i % 3) == 0) && ((i % 5) == 0))
-			printf("%s ", finu);
+		if (i != 100)
+		{
+			if (((i % 3) == 0) && ((i % 5) != 0))
+				printf("%s ", fi);
+			else if (((i % 5) == 0) && ((i % 3) != 0))
+				printf("%s ", nu);
+			else if (((i % 3) == 0) && ((i % 5) == 0))
+				printf("%s ", finu);
+			else
+				printf("%d ", i);
+		}
 		else
-			printf("%d ", i);
+			printf("%s", nu);
 	}
 	printf("\n");
 	return (0);
