@@ -1,15 +1,22 @@
 #include "main.h"
 /**
   * more_numbers - print 0-14
-  * 
+  *
   * Return: end of the program
   */
 void more_numbers(void)
 {
 	int i;
+	int j;
 
-	i = 0;
-	while
-	while (i < 15)
+	for (i = 1; i <= 10; i++)
 	{
-		if(
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 0)
+				_putchar('1');
+			_putchar(j % 10 + '0');
+		}
+		_putchar('\n');
+	}
+}
