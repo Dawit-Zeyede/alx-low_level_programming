@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src)
 	int m;
 
 	n = 0;
-	while (*(src + n) != '\n')
+	while (*(src + n) != '\0')
 	{
 		n += 1;
 	}
