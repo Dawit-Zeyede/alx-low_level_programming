@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
   * _strcat - concatinate two strings
   * @dest: address of the first string
@@ -19,6 +20,6 @@ char *_strcat(char *dest, char *src)
 	{
 		dest[dest_len + i] = src[i];
 	}
-	dest[dest_len + 1] = '\0';
+	dest[dest_len + i] = '\0';
 	return (dest);
 }
