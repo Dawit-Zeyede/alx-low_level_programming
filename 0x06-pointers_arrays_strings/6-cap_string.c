@@ -11,15 +11,34 @@ char *cap_string(char *str)
 	char low[26] = "abcdefghijklmnopqrstuvwxyz";
 	char upper[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	len = 1;
-	while (str[len] != '\0')
+	len = 0;
+	while (str[len] != '\n')
 	{
-		for (i = 0; i < 26 && ((str[len - 1] == ' ') || (str[len - 1] == '\n') || (str[len -1] == '.') || (str[len -1] == ',') || (str[len -1] == '!') || (str[len -1] == '\t')); i++)
+		if (str[len - 1] == ' ' ||
+				str[len - 1] == '\t' ||
+				str[len - 1] == '\n' ||
+				str[len - 1] == '\n' ||
+				str[len - 1] == ',' ||
+				str[len - 1] == ';' ||
+				str[len - 1] == '.' ||
+				str[len - 1] == '!' ||
+				str[len - 1] == '?' ||
+				str[len - 1] == '"' ||
+				str[len - 1] == '(' ||
+				str[len - 1] == ')' ||
+				str[len - 1] == '{' ||
+				str[len - 1] == '}' ||
+				len == 0)
 		{
-			if (str[len] == low[i])
-				str[len] = upper[i];
+			for (i = 0; i < 26; i++)
+			{
+				if (str[len] == low[i])
+				{
+					str[len] = upper[i];
+				}
+			}
 		}
-		len += 1;
+		str += 1;
 	}
 	return (str);
 }
