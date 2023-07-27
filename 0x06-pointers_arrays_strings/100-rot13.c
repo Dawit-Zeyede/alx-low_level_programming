@@ -7,19 +7,20 @@
 char *rot13(char *str)
 {
 	int i;
-	int len;
-	char low[26] = "abcdefghijklmnopqrstuvwxyz";
+	int j;
+	char decode[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char encode[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	len = 0;
-	while (str[len] != '\0')
+	for (j = 0; str[j] != '\0'; j++)
 	{
-		for (i = 0; i < 26; i++)
+		for (i = 0; i < 52; i++)
 		{
-			if (i > 13)
-				i = 0;
-			str[len] = low[i + 13];
+			if (str[j] == decode[i])
+			{
+				str[j] = encode[i];
+				break;
+			}
 		}
-		str += 1;
 	}
 	return (str);
 }
