@@ -1,5 +1,6 @@
 #include "main.h"
-/** leet - encode leet.
+/**
+  * leet - encode leet.
   * @str: string to be encoded.
   * Return: end of the program.
   */
@@ -11,7 +12,7 @@ char *leet(char *str)
 	char cod[] = "4433007711";
 
 	len = 0;
-	while(str[len] != '\0')
+	while (str[len] != '\0')
 	{
 		for (i = 0; i < 10; i++)
 		{
