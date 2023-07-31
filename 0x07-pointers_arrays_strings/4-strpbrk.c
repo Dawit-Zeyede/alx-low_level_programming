@@ -8,13 +8,14 @@
   */
 char *_strpbrk(char *s, char *accept)
 {
+	int i;
+
 	while (*s)
 	{
-		while(*accept)
+		for (i = 0; accept[i]; i++)
 		{
-			if (*s == *accept)
+			if (*s == accept[i])
 				return (s);
-			accept += 1;
 		}
 		s += 1;
 	}
