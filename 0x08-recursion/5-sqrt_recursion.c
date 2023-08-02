@@ -4,14 +4,27 @@
   * @n: number.
   * Return: end of the program.
   */
+int _calculator(int n, int i);
 int _sqrt_recursion(int n)
 {
 	int i;
 
-	for (i = 1; i <= n; i++)
-	{
-		if (i * i == n)
-			return i;
-	}
-	return -1;
+	i = 1;
+	return (_calculator(n, i));
+}
+/**
+  * _calculator - calculator for sqrt.
+  * @n: number.
+  * @i: checking number.
+  * Return: end of the program.
+  */
+int _calculator(int n, int i)
+{
+	if (n < 0)
+		return (-1);
+	if (i * i > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (_calculator(n, i + 1));
 }
