@@ -1,10 +1,10 @@
 #include "main.h"
+int _calculator(int n, int i);
 /**
   * _sqrt_recursion - natural square root of a number.
   * @n: number.
   * Return: end of the program.
   */
-int _calculator(int n, int i);
 int _sqrt_recursion(int n)
 {
 	int i;
