@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
-  * main - prints main arguments.
-  * @argc: number to be printed.
-  * @argv: argument container.
+  * main - print the number of arguments.
+  * @argc: number of arguments.
+  * @argv: array of arguments.
   * Return: end of the program.
   */
 int main(int argc, char *argv[])
 {
 	(void) argv;
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
