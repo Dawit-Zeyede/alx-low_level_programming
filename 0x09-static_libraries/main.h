@@ -1,5 +1,5 @@
-#ifdef MAIN_H
-#define MAIN_H
+#ifndef MAIN_S
+#define MAIN_S
 
 int _putchar(char c);
 int _islower(int c);
