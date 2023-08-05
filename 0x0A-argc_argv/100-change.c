@@ -2,25 +2,25 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-  * main - prints the minimum number of coins for a change.
+  * main - print the minimum num of coins for change.
   * @argc: number of arguments.
-  * @argv: amount to be made of cents.
+  * @argv: amount to be coined.
   * Return: end of the program.
   */
 int main(int argc, char *argv[])
 {
 	int i;
-	int amount;
 	int number;
+	int amount;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	number = 0;
-	amount = atoi(argv[1]);
-	if (argc < 2 || argc > 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	amount = atoi(argv[1]);
 	if (amount < 0)
 	{
 		printf("0\n");
