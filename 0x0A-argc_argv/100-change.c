@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	number = 0;
 	amount = atoi(argv[1]);
-	if (argc != 2)
+	if (argc < 2 || argc > 2)
 	{
 		printf("Error\n");
 		return (1);

@@ -9,19 +9,27 @@
 int main(int argc, char *argv[])
 {
 	int positive_sum;
-	int num1;
-	int num2;
+	int i;
+	int j;
 
-	if (argc < 3 || argc > 3)
+	positive_sum = 0;
+	if (argc == 1)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
+		return (0);
 	}
-	if (*argv[1] < '0' || *argv[1] > '9' || *argv[2] < '0' || *argv[2] > '9')
-		printf("Error");
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	positive_sum = num1 + num2;
+	for (i = 0; i < argc; i++)
+	{
+		if (*argv[i] < '0' && *argv[i] > '9')
+		{
+			printf("Error\n");
+			return (0);
+		}
+	}
+	for (j = 1; j < argc; j++)
+	{
+		positive_sum += atoi(argv[i]);
+	}
 	printf("%d\n", positive_sum);
 	return (0);
 }
