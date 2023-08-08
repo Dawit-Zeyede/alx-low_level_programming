@@ -10,8 +10,12 @@ char *_strdup(char *str)
 {
 	char *cpy;
 	int i;
+	int len;
 
-	cpy = malloc(150);
+	len = 0;
+	while (str[len] != '\0')
+		len += 1;
+	cpy = malloc(sizeof(char) * len);
 	while (str != NULL)
 	{
 		if (cpy == NULL)
