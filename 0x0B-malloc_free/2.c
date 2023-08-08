@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
   * _strdup - reallocates the string and copy its value.
   * @str: string to be reallocated and copies.
@@ -11,7 +12,7 @@ char *_strdup(char *str)
 	char *cpy;
 	int i;
 
-	cpy = malloc(150);
+	cpy = malloc(sizeof(*str));
 	while (str != NULL)
 	{
 		if (cpy == NULL)
