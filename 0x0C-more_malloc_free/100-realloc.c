@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stddef.h>
-/***
+/**
   * _realloc - reallocate the previous variable.
   * @ptr: variable to be reallocated.
   * @old_size: the size of ptr.
