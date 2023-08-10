@@ -9,9 +9,9 @@
   */
 int main(int argc, char *argv[])
 {
-	int num1;
-	int num2;
-	int product;
+	unsigned long int num1;
+	unsigned long int num2;
+	unsigned long int product;
 	int i;
 	char *arg1;
 	char *arg2;
@@ -39,9 +39,9 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
+	num1 = (unsigned int)atoi(argv[1]);
+	num2 = (unsigned int)atoi(argv[2]);
 	product = num1 * num2;
-	printf("%d\n", product);
+	printf("%lu\n", product);
 	return (0);
 }
