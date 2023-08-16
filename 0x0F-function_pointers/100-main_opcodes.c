@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	if (value < 0)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(2);
 	}
 	arr = (char *)main;
 	for (i = 0; i < value; i++)
