@@ -1,35 +1,35 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
-  * main - multiplies two numbers.
-  * @argc: number of arguments.
-  * @argv: array of arguments,
-  * Return: end of the program.
-  */
+ * main - add positive numbers that are given as arguments.
+ * @argc: number of arguments.
+ * @argv: array of arguments.
+ * Return: end of the program.
+ */
 int main(int argc, char *argv[])
 {
-	int positive_sum;
+	int sum = 0;
 	int i;
-	int j;
+	int num;
 
-	positive_sum = 0;
-	if (argc == 1)
+	if (argc <= 1)
 	{
-		printf("0\n");
+		printf("Error");
 		return (0);
 	}
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] < '0' && *argv[i] > '9')
+		if (*argv[i] == '0')
+			continue;
+		num = atoi(argv[i]);
+		if (num == 0)
 		{
-			printf("Error\n");
-			return (0);
+			printf("Error");
+			return (1);
 		}
+		if (num > 0)
+			sum += num;
 	}
-	for (j = 1; j < argc; j++)
-	{
-		positive_sum += atoi(argv[i]);
-	}
-	printf("%d\n", positive_sum);
+	printf("%d", sum);
 	return (0);
 }
