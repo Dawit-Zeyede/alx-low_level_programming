@@ -15,10 +15,12 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
-		return (1);
+		return (0);
 	}
 	for (i = 1; i < argc; i++)
 	{
+		if (*argv[i] == '0')
+			continue;
 		num = atoi(argv[i]);
 		if (num == 0)
 		{
