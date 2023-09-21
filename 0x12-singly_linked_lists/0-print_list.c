@@ -8,11 +8,6 @@ size_t print_list(const list_t *h)
 {
 	size_t count;
 
-	if (h == NULL)
-	{
-		printf("Zero nodes.");
-		return (0);
-	}
 	count = 0;
 	while (h != NULL)
 	{
