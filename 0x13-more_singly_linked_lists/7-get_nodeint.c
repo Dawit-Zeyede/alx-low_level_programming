@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-  * get_nodeint_atindex - get the address of a node at a given index.
+  * get_nodeint_at_index - get the address of a node at a given index.
   * @head: address of the first node.
   * @index: index of a  node to be returned.
   * Return: address of the indexede node.
