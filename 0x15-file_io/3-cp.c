@@ -46,10 +46,16 @@ int main(int argc, char *argv[])
 	{
 		nchars = read(file_from, buf, 1024);
 		if (nchars == -1)
-			error_file(-1, 0, argv);
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit (98);
+		}
 		nwr = write(file_to, buf, nchars);
 		if (nwr == -1)
-			error_file(0, -1, argv);
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit (99);
+		}
 	}
 	err_close = close(file_from);
 	if (err_close == -1)
