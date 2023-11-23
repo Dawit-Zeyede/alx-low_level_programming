@@ -13,7 +13,8 @@ void printer(unsigned long int n)
 	if ((n & 1) == 0)
 		_putchar('0');
 }
-/** print_binary - printer
+/** 
+ * print_binary - printer
  * @n: Decimal number
  */
 void print_binary(unsigned long int n)
