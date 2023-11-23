@@ -8,7 +8,7 @@ void printer(unsigned long int n)
 	if (n == 0)
 		return;
 	printer(n >> 1);
-	if (n & 1 == 1)
+	if ((n & 1) == 1)
 		_putchar('1');
 	else
 		_putchar('0');
