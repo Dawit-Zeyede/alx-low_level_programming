@@ -10,7 +10,7 @@ void printer(unsigned long int n)
 	printer(n >> 1);
 	if ((n & 1) == 1)
 		_putchar('1');
-	else
+	if ((n & 1) == 0)
 		_putchar('0');
 }
 /** print_binary - printer
