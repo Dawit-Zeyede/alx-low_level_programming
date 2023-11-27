@@ -22,7 +22,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		for (i = 0; text_content[i] != '\0'; i++)
 			count += 1;
 		
-		appended = write(filename, text_content, count);
+		appended = write(fd, text_content, count);
 		if (appended == -1)
 			return (-1);
 	}
