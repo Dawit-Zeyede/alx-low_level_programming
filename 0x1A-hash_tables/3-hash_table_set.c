@@ -3,6 +3,7 @@
  * hash_table_set - Add an item of Hash table.
  * @ht: A pointer to the hash table.
  * @key: Key for added item.
+ * @value: Value for the key to be added.
  * Return: 0 or 1
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
