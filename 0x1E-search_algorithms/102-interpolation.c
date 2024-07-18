@@ -1,8 +1,3 @@
-/*
- * File: 102-interpolation.c
- * Auth: George Kabucho
- */
-
 #include "search_algos.h"
 
 /**

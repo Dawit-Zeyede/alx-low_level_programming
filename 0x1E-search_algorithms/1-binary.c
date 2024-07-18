@@ -1,8 +1,3 @@
-/*
- * File: 1-binary.c
- * Auth: George Kabucho
- */
-
 #include "search_algos.h"
 
 /**
